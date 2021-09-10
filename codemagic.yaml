@@ -13,7 +13,7 @@ workflows:
                 XCODE_SCHEME: "test_cicd_gitlab"
             node: latest
         scripts:
-           - npm i -g react-native-cli
+            - npm i -g react-native-cli
             - npm install
             - npm install --save-dev jetifier
             - npx jetify
@@ -23,7 +23,7 @@ workflows:
                 # build Android
                  cd android
                 ./gradlew assembleRelease
-                
+
             - |
                 # build iOS
                 cd ios
